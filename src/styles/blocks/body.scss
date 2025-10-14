@@ -1,0 +1,25 @@
+@import '../utils/mixins';
+
+html,
+body {
+  overflow-y: auto;
+  background: linear-gradient(to right, #191536, #000);
+}
+
+html.no-scroll,
+body.no-scroll {
+  overflow: hidden;
+  height: 100%; /* іноді потрібно */
+}
+
+body.no-scroll {
+  position: relative; /* щоб уникнути зсувів */
+  overflow: hidden;
+  height: 100vh; /* щоб не було прокрутки */
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
