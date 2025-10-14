@@ -46,7 +46,9 @@
     }
 
     .nav__list {
-      flex-direction: row;
+      @include on-tablet {
+        flex-direction: row;
+      }
 
       @include on-tablet {
         gap: 40px;
