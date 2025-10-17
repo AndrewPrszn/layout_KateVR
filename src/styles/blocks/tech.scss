@@ -264,7 +264,6 @@
     position: absolute;
     height: 2px;
     background: #00b7ff;
-    opacity: 0;
     transform-origin: left center;
     animation: lineDraw 1.2s ease forwards;
 
@@ -281,7 +280,6 @@
         width: 2px;
         height: 69px;
         background: #00b7ff;
-        opacity: 0;
         animation: lineDrawVertical 1s ease forwards 0.6s;
       }
     }
@@ -307,7 +305,6 @@
         width: 2px;
         height: 235px;
         background: #00b7ff;
-        opacity: 0;
         animation: lineDrawVertical 1s ease forwards 0.8s;
       }
     }
@@ -327,7 +324,6 @@
         width: 2px;
         height: 182px;
         background: #00b7ff;
-        opacity: 0;
         animation: lineDrawVertical 1s ease forwards 1s;
       }
     }

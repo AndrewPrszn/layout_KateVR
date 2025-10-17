@@ -872,8 +872,10 @@
 
             <div class="contact__button--wrapper">
               <button
+                form="subscribeForm"
                 type="submit"
                 class="contact__button"
+                id="contactBtn"
               >
                 <span class="contact__button--tittle">Contact Us</span>
               </button>
@@ -1049,6 +1051,15 @@
           form.reset(); // очищення поля
         });
       }
+
+      const contactBtn = document.getElementById('contactBtn');
+
+      if (form && contactBtn) {
+        contactBtn.addEventListener('click', function () {
+          form.reset();
+        });
+      }
+
       // Закриття обох дропдаунів при кліку поза ними
       document.addEventListener('click', function (e) {
         const dropdownAside = document.querySelector(
