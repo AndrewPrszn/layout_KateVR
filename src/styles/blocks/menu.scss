@@ -68,3 +68,29 @@
     width: 100%;
   }
 }
+
+.menu a {
+  display: block;
+  position: relative;
+  left: -20px; // компенсуємо padding батька
+  width: calc(100% + 40px); // 100% + подвійний padding
+  padding: 1px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.language-menu a {
+  display: block;
+  position: relative;
+  left: -20px; // компенсуємо padding батька
+  width: calc(100% + 40px); // 100% + подвійний padding
+  padding: 1px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu a:hover,
+.language-menu a:hover {
+  background-color: #110e25;
+  color: #05c2df;
+}

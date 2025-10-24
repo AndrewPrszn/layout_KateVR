@@ -8,6 +8,11 @@
   overflow: visible;
   height: auto;
 
+  @include on-desktop {
+    min-height: 100vh;
+    position: relative;
+  }
+
   &__bottom--content {
     @include page-grid;
   }
@@ -82,7 +87,7 @@
     @include on-desktop {
       grid-column: 1 / 7;
       font-size: 54px;
-      margin-top: 245px;
+      margin-top: 145px;
     }
   }
 
@@ -187,6 +192,8 @@
 .help-menu,
 .header__bottom--content,
 .top__bar {
-  overflow: visible !important;
-  height: auto !important;
+  @include on-tablet {
+    overflow: visible !important;
+    height: auto !important;
+  }
 }

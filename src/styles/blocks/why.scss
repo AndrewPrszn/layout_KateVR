@@ -232,5 +232,16 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+
+    &:hover {
+      background-color: #fff;
+      color: #05c2df;
+      transition: color 0.4s;
+    }
+
+    &:disabled {
+      background-color: #191536;
+      color: #2f2f2f;
+    }
   }
 }

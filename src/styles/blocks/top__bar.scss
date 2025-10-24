@@ -67,7 +67,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-top: 220px;
+      margin-top: 20px;
+      margin-bottom: 50px;
     }
   }
   &__wrapper--second {
@@ -81,18 +82,21 @@
   }
 
   &__button--top {
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    border: none;
+    display: flex; /* щоб текст і стрілка в ряд */
+    flex-direction: column; /* текст зверху, стрілка знизу */
+    align-items: center; /* центруємо по горизонталі */
+    justify-content: center; /* центруємо по вертикалі */
+    text-decoration: none; /* прибираємо підкреслення */
+    font-size: 16px; /* розмір тексту */
     cursor: pointer;
+    background: transparent; /* або свій фон */
+    border: none;
     gap: 5px;
 
     color: #05c2df;
 
     &:hover {
       transition: color 0.4s;
-      color: #fff;
     }
   }
 

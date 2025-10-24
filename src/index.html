@@ -405,7 +405,7 @@
                 <ul class="nav__lists">
                   <li class="nav__item">
                     <a
-                      href="#"
+                      href="#Gaming"
                       class="nav__link"
                     >
                       FAQ
@@ -424,10 +424,13 @@
                 </ul>
               </div>
               <div class="bottom__wrapper--second">
-                <button class="bottom__button--top">
+                <a
+                  href="#Gaming"
+                  class="bottom__button--top"
+                >
                   More
                   <span class="button--arrow--top">▼</span>
-                </button>
+                </a>
               </div>
               <div class="bottom__wrapper--third">
                 <div class="nav-buttons">
@@ -446,7 +449,10 @@
       </div>
     </header>
     <main class="main">
-      <div class="gaming">
+      <div
+        class="gaming"
+        id="Gaming"
+      >
         <div class="container">
           <div class="gaming__content--mobile">
             <h2 class="gaming__section--title">
@@ -469,7 +475,10 @@
                 environment...
               </p>
             </div>
-            <div class="gaming__mobile--block3">
+            <div
+              class="gaming__mobile--block3"
+              id="skip"
+            >
               <h3 class="gaming__section--heading">FITNESS</h3>
               <p class="gaming__text--paragraph">
                 Combine business with pleasure, and discover countless ways...
@@ -1095,6 +1104,14 @@
       function toggleHelpMenu() {
         document.getElementById('helpMenu').classList.toggle('open');
       }
+
+      const scrollBtn = document.getElementById('scrollBtn');
+      const nextSection = document.getElementById('next-section');
+
+      scrollBtn.addEventListener('click', function (e) {
+        document.body.classList.remove('no-scroll'); // прибираємо блокування скролу
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+      });
     </script>
   </body>
 </html>
